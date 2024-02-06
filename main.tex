@@ -1,0 +1,109 @@
+\documentclass[12pt,a4paper]{article}
+% \usepackage{fullpage}
+
+% Document formatting/structure
+\usepackage[top=2cm, bottom=3cm, left=2cm, right=2cm]{geometry}
+\usepackage{microtype}
+\usepackage{appendix}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{placeins}
+\usepackage{mdframed}
+\usepackage{titling}
+\usepackage[cc]{titlepic}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}% http://ctan.org/pkg/adjustbox
+\usepackage{siunitx}
+\usepackage[bottom]{footmisc}
+\usepackage{lscape}
+
+\newcolumntype{d}{S[
+    input-open-uncertainty=,
+    input-close-uncertainty=,
+    parse-numbers = false,
+    table-align-text-pre=false,
+    table-align-text-post=false
+    ]}
+    
+\graphicspath{{./figures/}}
+
+% Filler text
+\usepackage{lipsum}
+
+% Paragraph formatting
+\usepackage{parskip}
+\setlength{\parindent}{0em}
+\setlength{\parskip}{2ex}
+\renewcommand{\baselinestretch}{1.5}
+
+% Maths formatting
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{mathtools}
+\usepackage{mathrsfs}
+\usepackage{bm}
+
+
+% Table packages
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{makecell}
+
+% Figure captioning
+\usepackage{caption}
+\usepackage{subcaption}
+
+% Landscape pages
+\usepackage{lscape} 
+
+% Diagrams
+%\usepackage{tikz}
+
+% Referencing
+\usepackage[backend=biber, style=authoryear]{biblatex}
+\addbibresource{references.bib}
+
+\title{\centering\includegraphics[width=0.5\linewidth]{logo.png}\\[0.2ex] \textbf{e61 Institute Working Paper} \\[0.5ex] \LARGE Working Paper Title}
+\author{Author Name}
+\date{\today}
+
+\setlength{\intextsep}{1ex} 
+
+\begin{document}
+
+\begin{titlepage}
+    \maketitle
+    \begin{abstract}
+        \noindent
+        \lipsum[1]
+    \end{abstract}
+\end{titlepage}
+
+\section{Introduction}\label{sec:intro}
+
+\lipsum[1-6]
+
+\subsection{Subsection 1}
+
+\lipsum[1-3]
+
+\subsection{Subsection 2}
+
+\lipsum[1-4]
+
+% Reference list
+\printbibliography
+
+% Appendices
+\begin{appendices}
+
+\section{Robustness checks}
+
+
+\end{appendices}
+
+\end{document}
