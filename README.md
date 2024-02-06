@@ -1,4 +1,4 @@
-# e61 Institute Research Note LaTeX template
+# e61 Institute Working Paper LaTeX template
 
 This Github repo hosts the LaTeX template for e61 Institute Working Papers.
 
